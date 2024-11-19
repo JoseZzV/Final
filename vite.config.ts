@@ -1,7 +1,15 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react-swc';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-})
+  build: {
+    rollupOptions: {
+      input: {
+        main: './public/index.html',
+        models: './public/models.html',
+        main2: './public/main2.html'  // Asegúrate de añadir este archivo si estás usando main2
+      }
+    }
+  }
+});

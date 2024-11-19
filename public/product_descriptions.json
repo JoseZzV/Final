@@ -1,0 +1,32 @@
+[
+    {
+        "product": "The Golden Apple",
+        "price": "$120.000",
+        "productDescription": "This golden highlighter captures the divine beauty of Aphrodite. Inspired by the famous apple of discord, the product provides a celestial glow, highlighting features with a golden radiance that emulates the light of the gods."
+    },
+    {
+        "product": "The Nile Copper",
+        "price": "$89.900",
+        "productDescription": "This luxurious copper-toned lipstick pays homage to Cleopatra's glamour and power. Its rich, long-lasting formula reflects the splendor of ancient Egypt, offering a metallic finish that echoes the treasures the queen had at her disposal."
+    },
+    {
+        "product": "Versailles Rose",
+        "price": "$152.300",
+        "productDescription": "This set of powders and blushes in soft pink tones is a tribute to Marie Antoinette's extravagant taste. Inspired by the gardens of Versailles and her rococo style, the product offers a palette of elegant colors that evoke the beauty of French royalty."
+    },
+    {
+        "product": "The Enchantress Shade",
+        "price": "$100.000", 
+        "productDescription": "This eyeshadow palette offers a range of intense and seductive colors, ideal for a mysterious and captivating look. Inspired by Mata Hari's allure and sophistication, each shade is designed to enhance intensity and mystery in makeup."
+    },
+    {
+        "product": "Roman Lush",
+        "price": "$110.000",
+        "productDescription": "This bold and sensual perfume is inspired by Messalina's hedonistic and extravagant life. With intense and daring notes, the fragrance captures the spirit of ancient Rome, ideal for those seeking a scent that exudes confidence and luxury."
+    },
+    {
+        "product": "Enigmatic Smile",
+        "price": "$23.900",
+        "productDescription": "This lip balm offers a subtle and sophisticated shade inspired by the Mona Lisa's famous enigmatic smile. With its moisturizing formula and delicate finish, the product aims to capture the mystery and elegance that have fascinated the world for centuries."
+    }
+]
