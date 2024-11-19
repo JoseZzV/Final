@@ -20,6 +20,7 @@ const modelsData = [
 
 const Models: React.FC = () => {
     const [selectedModelId, setSelectedModelId] = useState<number | null>(null);
+<<<<<<< HEAD
     const [descriptions, setDescriptions] = useState<any[]>([]);
 
     // Lee el archivo JSON al montar el componente
@@ -28,6 +29,20 @@ const Models: React.FC = () => {
             .then(response => response.json())
             .then(data => {
                 setDescriptions(data);
+=======
+    const [descriptions, setDescriptions] = useState<string[][]>([]);
+
+    // Lee el archivo de texto al montar el componente
+    useEffect(() => {
+        fetch('/models_descriptions.txt')
+            .then(response => response.text())
+            .then(text => {
+                // Divide el texto en bloques usando el delimitador '---'
+                const blocks = text.split(/^\s*---\s*$/gm).map(block => block.trim());
+                // Divide cada bloque en líneas
+                const parsedDescriptions = blocks.map(block => block.split('\n').map(line => line.trim()).filter(line => line));
+                setDescriptions(parsedDescriptions);
+>>>>>>> af5f64c4fc0075014612517612cf619fc3d12ab7
             })
             .catch(error => console.error('Error fetching descriptions:', error));
     }, []);
@@ -51,6 +66,7 @@ const Models: React.FC = () => {
                         />
                         {selectedModelId === model.id && (
                             <div className="text-4xl mt-2">
+<<<<<<< HEAD
                                 {descriptions[model.id - 1] ? (
                                     <>
                                         <p><strong>Name:</strong> {descriptions[model.id - 1].name}</p>
@@ -60,6 +76,11 @@ const Models: React.FC = () => {
                                 ) : (
                                     'Descripción no disponible'
                                 )}
+=======
+                                {descriptions[model.id - 1]?.map((desc, index) => (
+                                    <p key={index}>{desc}</p>
+                                )) || 'Descripción no disponible'}
+>>>>>>> af5f64c4fc0075014612517612cf619fc3d12ab7
                             </div> // Muestra el texto si el modelo está seleccionado
                         )}
                     </div>
